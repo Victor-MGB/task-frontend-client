@@ -1,0 +1,91 @@
+
+.perfText{
+    display: flex;
+    justify-content: space-between;
+}
+.teamContainer1{
+    height: 330px;
+    width: 450px;
+    margin-left: 250px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 5px 5px #808080a9;
+    border-radius: 15px;
+    background-color: white;
+    border-style: solid;
+    border-color: yellow;
+}
+
+.coonection{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.coonection img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.caption{
+    width: 200px;
+    height: 30%;
+}
+
+.range {
+  width: 90%;
+  height: 5px;
+  -webkit-appearance: none;
+  background: #ccc;
+  border-radius: 5px;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; 
+  height: 20px; 
+  background: yellow; 
+  border-radius: 50%; 
+  cursor: pointer; 
+}
+
+.range::-moz-range-thumb {
+  width: 20px; 
+  height: 20px;
+  background: yellow; 
+  border: none; 
+  border-radius: 50%; 
+  cursor: pointer; 
+}
+
+.recently{
+    color: yellow;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.progress{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.progress h2{
+  color: yellow;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.progress p{
+  color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 40px;
+    /* margin-top: 20px; */
+}
+

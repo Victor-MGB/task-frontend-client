@@ -1,0 +1,63 @@
+.project-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 1px 2px 3px 3px thistle;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.project-text{
+    margin-left: 20px;
+}
+
+.my-component-font, .isPlaying{
+    margin-top: 20px;
+    font-size: 24px;
+        margin-right: 20px;
+
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-text h3{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+}
+
+.project-text p{
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .project-container {
+    margin-left: 70px;
+    flex-direction: column; /* Stack components vertically on smaller screens */
+    align-items: center; /* Center everything horizontally */
+  }
+
+  .project-text {
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .my-component-font,
+  .isPlaying {
+    margin-top: 10px; /* Adjust top margin for spacing */
+  }
+
+  .project-text h3 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .project-text p {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}

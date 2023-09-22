@@ -1,0 +1,99 @@
+.financeComponen{
+    height: 330px;
+    width: 480px;
+    margin-left: 250px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 5px 5px #808080a9;
+    border-radius: 15px;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+}
+
+.threeDots{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.finance{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.brandIma{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.brandIma img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.icon{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.rangee {
+  width: 90%;
+  height: 5px;
+  -webkit-appearance: none;
+  background: #ccc;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.rangee::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; 
+  height: 20px; 
+  background: white; 
+  border-radius: 50%; 
+  cursor: pointer; 
+}
+
+.rangee::-moz-range-thumb {
+  width: 20px; 
+  height: 20px;
+  background: white; 
+  border: none; 
+  border-radius: 50%; 
+  cursor: pointer; 
+}
+
+.recently{
+    color: yellow;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.progresss{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.progresss h2{
+  color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 20px;
+    /* margin-top: 20px; */
+}
+
+.progresss p{
+  color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    margin-right: 20px;
+    /* margin-top: 20px; */
+}

@@ -1,0 +1,224 @@
+
+.jessica-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+/* Profile image styles */
+.jesica-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border-style: solid;
+  border: 4px solid black;
+  box-shadow: 0 4px 8px blue;
+}
+
+/* .jesica-image input{
+    background-color: blue;
+    color: white;
+    display: none;
+} */
+
+/* Styling for the file input */
+.file-input {
+  display: none; /* Hide the default file input */
+}
+
+.upload-button {
+  background-color: #007bff; /* Blue color, you can change this to your preferred color */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Add padding to make it look like a button */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.file-name {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* Text content styles */
+.jesica-text {
+  flex: 1;
+}
+
+.jesica-text h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.jesica-text p {
+  font-size: 16px;
+  color: #777;
+  margin: 0;
+}
+
+/* Notification and messaging icons styles */
+.jessica-font {
+  margin-top: 10px;
+  display: flex;
+}
+
+.jessica-font svg {
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  margin-right: 16px;
+  transition: color 0.3s ease;
+}
+
+.jessica-font svg:hover {
+  color: #007bff;
+}
+
+.notifications-dropdown,
+.messaging-modal {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 1;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  position: fixed;
+}
+
+/* Modal header styles */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.modal-header button {
+  font-size: 16px;
+  color: #007bff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.modal-header button:hover {
+  color: #0056b3;
+}
+
+/* Message list styles */
+.message-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.message-item {
+  margin-bottom: 16px;
+}
+
+.message-sender {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.message-content {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Message input styles */
+.message-input textarea {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.message-input button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-input button:hover {
+  background-color: #0056b3;
+}
+
+.close-note{
+    color: blue;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .jessica-container {
+    margin-left: 150px;
+    margin-top: 50px;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center everything horizontally */
+  }
+
+  .jesica-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin between image and text */
+  }
+
+  .jesica-image img {
+    margin-right: 0; /* Remove right margin for smaller screens */
+  }
+
+  .jessica-font {
+    flex-direction: column; /* Stack icons vertically on smaller screens */
+    margin-top: 20px; /* Add more top margin for spacing */
+  }
+
+  .jessica-font svg {
+    margin-right: 0; /* Remove right margin for smaller screens */
+  }
+
+  .notifications-dropdown,
+  .messaging-modal {
+    width: 80%; /* Adjust the width for smaller screens */
+    max-width: 300px; /* Limit the maximum width */
+    top: 10%; /* Adjust positioning for smaller screens */
+    left: 10%; /* Center the modal */
+  }
+}
